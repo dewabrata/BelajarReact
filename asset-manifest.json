@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/BelajarReact/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/BelajarReact/static/js/main.a59815f2.chunk.js",
-    "main.js.map": "/BelajarReact/static/js/main.a59815f2.chunk.js.map",
+    "main.js": "/BelajarReact/static/js/main.554cc06d.chunk.js",
+    "main.js.map": "/BelajarReact/static/js/main.554cc06d.chunk.js.map",
     "runtime-main.js": "/BelajarReact/static/js/runtime-main.6402ee88.js",
     "runtime-main.js.map": "/BelajarReact/static/js/runtime-main.6402ee88.js.map",
     "static/js/2.94850d16.chunk.js": "/BelajarReact/static/js/2.94850d16.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.6402ee88.js",
     "static/js/2.94850d16.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.a59815f2.chunk.js"
+    "static/js/main.554cc06d.chunk.js"
   ]
 }
