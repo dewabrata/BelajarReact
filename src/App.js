@@ -1,18 +1,24 @@
 
 import React, { Component } from 'react';
+import ListKanan from './component/ListKanan';
 import ListKiri from './component/ListKiri';
 
 class App extends Component{
-
+ 
 
   constructor(props){
 
     super(props);
 
+    this.carts=[];
+    this.addCart = this.addCart.bind(this);
+
     this.state={
-      product :[]
+      product :[],
+      cart:[]
     };
 
+    
 
   }
 
@@ -34,7 +40,7 @@ class App extends Component{
               this.setState({
                 product:json
               });
-              console.log(this.state)
+            
 
             })
   }
@@ -48,41 +54,13 @@ class App extends Component{
       <div className="col-md-4 order-md-2 mb-4">
         <h4 className="d-flex justify-content-between align-items-center mb-3">
           <span className="text-muted">Your cart</span>
-          <span className="badge badge-secondary badge-pill">3</span>
+          <span className="badge badge-secondary badge-pill">{this.state.cart.length}</span>
         </h4>
         <ul className="list-group mb-3">
-          <li className="list-group-item d-flex justify-content-between lh-condensed">
-            <div>
-              <h6 className="my-0">Product name</h6>
-              <small className="text-muted">Brief description</small>
-            </div>
-            <span className="text-muted">$12</span>
-          </li>
-          <li className="list-group-item d-flex justify-content-between lh-condensed">
-            <div>
-              <h6 className="my-0">Second product</h6>
-              <small className="text-muted">Brief description</small>
-            </div>
-            <span className="text-muted">$8</span>
-          </li>
-          <li className="list-group-item d-flex justify-content-between lh-condensed">
-            <div>
-              <h6 className="my-0">Third item</h6>
-              <small className="text-muted">Brief description</small>
-            </div>
-            <span className="text-muted">$5</span>
-          </li>
-          <li className="list-group-item d-flex justify-content-between bg-light">
-            <div className="text-success">
-              <h6 className="my-0">Promo code</h6>
-              <small>EXAMPLECODE</small>
-            </div>
-            <span className="text-success">-$5</span>
-          </li>
-          <li className="list-group-item d-flex justify-content-between">
-            <span>Total (USD)</span>
-            <strong>$20</strong>
-          </li>
+          {this.state.cart.map((element)=>{
+            return <ListKanan key={element.id} model={element} id={element.id} images={element.image} price={element.price} title={element.title} description = {element.description}/>
+          })}
+        
         </ul>
       </div>
   
@@ -90,9 +68,9 @@ class App extends Component{
       <div className="col-md-8 order-md-1">
         <ul className="list-unstyled">
          
-         {this.state.product.map(element => {
+         {this.state.product.map((element) => {
 
-          return <ListKiri images={element.image} title={element.title} description = {element.description}/>
+          return <ListKiri eventClick={this.addCart} key={element.id} model={element} id={element.id} images={element.image} title={element.title} description = {element.description}/>
 
          })
          }
@@ -104,6 +82,18 @@ class App extends Component{
    
       )
   
+  }
+
+
+  addCart(model){
+  
+
+  
+    this.carts.push(model);
+    this.setState({cart:this.carts});
+
+   
+    console.log("ini cart" +  this.state.cart);
   }
 
 }
