@@ -9,7 +9,7 @@ import React, { Component } from 'react';
 
         return(
          
-            <li className="media" >
+            <li className="media" id={this.props.urut} >
             <img src={this.props.images} style={{"width":"150px","height":"150px"}}
              className="img-thumbnail" alt="..."/>
             <div className="media-body">
@@ -17,7 +17,7 @@ import React, { Component } from 'react';
               {this.props.description}
             </div>
             <div>
-            <button type="button" className="btn btn-primary btn-lg" onClick={e=>{this.props.eventClick(this.props.model)}}>Add to cart</button>
+            <button type="button" className="btn btn-primary btn-lg" onClick={e=>{this.props.eventClick(this.props.model,this.props.urut)}}>Add to cart</button>
             </div>
           </li>
         );
