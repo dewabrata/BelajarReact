@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/BelajarReact/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/BelajarReact/static/js/main.d59f8ebc.chunk.js",
-    "main.js.map": "/BelajarReact/static/js/main.d59f8ebc.chunk.js.map",
-    "runtime-main.js": "/BelajarReact/static/js/runtime-main.69cd32dc.js",
-    "runtime-main.js.map": "/BelajarReact/static/js/runtime-main.69cd32dc.js.map",
-    "static/js/2.fe07cf48.chunk.js": "/BelajarReact/static/js/2.fe07cf48.chunk.js",
-    "static/js/2.fe07cf48.chunk.js.map": "/BelajarReact/static/js/2.fe07cf48.chunk.js.map",
-    "static/js/3.1cf74bf7.chunk.js": "/BelajarReact/static/js/3.1cf74bf7.chunk.js",
-    "static/js/3.1cf74bf7.chunk.js.map": "/BelajarReact/static/js/3.1cf74bf7.chunk.js.map",
+    "main.js": "/BelajarReact/static/js/main.dabe679e.chunk.js",
+    "main.js.map": "/BelajarReact/static/js/main.dabe679e.chunk.js.map",
+    "runtime-main.js": "/BelajarReact/static/js/runtime-main.6402ee88.js",
+    "runtime-main.js.map": "/BelajarReact/static/js/runtime-main.6402ee88.js.map",
+    "static/js/2.94850d16.chunk.js": "/BelajarReact/static/js/2.94850d16.chunk.js",
+    "static/js/2.94850d16.chunk.js.map": "/BelajarReact/static/js/2.94850d16.chunk.js.map",
+    "static/js/3.2923fad1.chunk.js": "/BelajarReact/static/js/3.2923fad1.chunk.js",
+    "static/js/3.2923fad1.chunk.js.map": "/BelajarReact/static/js/3.2923fad1.chunk.js.map",
     "index.html": "/BelajarReact/index.html",
     "static/css/main.6dea0f05.chunk.css.map": "/BelajarReact/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.fe07cf48.chunk.js.LICENSE.txt": "/BelajarReact/static/js/2.fe07cf48.chunk.js.LICENSE.txt"
+    "static/js/2.94850d16.chunk.js.LICENSE.txt": "/BelajarReact/static/js/2.94850d16.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.69cd32dc.js",
-    "static/js/2.fe07cf48.chunk.js",
+    "static/js/runtime-main.6402ee88.js",
+    "static/js/2.94850d16.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.d59f8ebc.chunk.js"
+    "static/js/main.dabe679e.chunk.js"
   ]
 }
