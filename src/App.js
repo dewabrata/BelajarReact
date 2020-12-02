@@ -63,7 +63,16 @@ class App extends Component{
           {this.state.cart.map((element,index)=>{
             return <ListKanan eventClick={this.deleteCart} urut={index} nomer={index} key={element.id} model={element} id={element.id} images={element.image} price={element.price} title={element.title} description = {element.description}/>
           })}
-        
+        <li className="list-group-item d-flex justify-content-between">
+          <span>Total (USD)</span>
+        <strong>{this.state.cart.reduce((total_price,product_beli) => {
+            return total_price + product_beli.price
+        },0)
+
+      }
+          
+          </strong>
+        </li>
         </ul>
       </div>
   
